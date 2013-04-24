@@ -1,0 +1,1 @@
+simRegTable: ("IIFII";enlist ",") 0: `$"F:\\Programming\\data\\dataset_simpleRegression.csv"
