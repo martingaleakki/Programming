@@ -1,0 +1,7 @@
+import Download
+
+pagelist=['http://www.economist.com/']
+print("Starting ....")
+crawler = Download.crawler('')
+crawler.crawl(pagelist)
+

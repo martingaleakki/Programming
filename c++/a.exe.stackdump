@@ -1,0 +1,11 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=0040168B
+eax=00001269 ebx=0027ACB0 ecx=0027ACB0 edx=00001269 esi=00000000 edi=00410FA0
+ebp=0027CC88 esp=00263570 program=f:\Programming\c++\a.exe, pid 30168, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0027CC88  0040168B  (004463C0, 0043DD50, 00401778, 0040179D)
+0027CCB8  004017CB  (00000001, 6116B690, 00F10090, 0027CC50)
+0027CD68  610060D8  (00000000, 0027CDA0, 61005450, 0027CDA0)
+61005450  61004416  (0000009C, A02404C7, E8611021, FFFFFF48)
+      4 [main] a 30168 _cygtls::handle_exceptions: Error while dumping state (probably corrupted stack)
