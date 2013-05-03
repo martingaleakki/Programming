@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/NQueens.o \
-	${OBJECTDIR}/Unique.o
+	${OBJECTDIR}/Palindrome.o
 
 
 # C Compiler Flags
@@ -57,21 +56,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/unique.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/unique.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/unique ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/NQueens.o: NQueens.cpp 
+${OBJECTDIR}/Palindrome.o: Palindrome.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/NQueens.o NQueens.cpp
-
-${OBJECTDIR}/Unique.o: Unique.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Unique.o Unique.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Palindrome.o Palindrome.cpp
 
 # Subprojects
 .build-subprojects:
@@ -79,7 +73,7 @@ ${OBJECTDIR}/Unique.o: Unique.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/unique.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe
 
 # Subprojects
 .clean-subprojects:

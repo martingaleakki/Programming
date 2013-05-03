@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <stdlib.h>
 #include <vector>
+#include "NQueens.h"
 using namespace std;
 
 vector<int> readTestCase()
@@ -28,6 +29,7 @@ vector<int> readTestCase()
 
 void Unique(vector<int> data)
 {
+    NQueens();
     cout<<data[0]<<endl;
     for(int i=1;i<data.size();i++)
     {

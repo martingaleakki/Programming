@@ -12,6 +12,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>NQueens.cpp</itemPath>
+      <itemPath>NQueens.h</itemPath>
       <itemPath>Unique.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -37,6 +39,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="NQueens.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NQueens.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Unique.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -61,6 +67,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="NQueens.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NQueens.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Unique.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
