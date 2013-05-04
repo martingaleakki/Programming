@@ -77,3 +77,26 @@ names(result)=c("index","pval","lags")
 result=result[with(result,order(pval)),]
 
 
+names(resultLog)=c("index","pval","lags")
+resultLog=resultLog[with(resultLog,order(pval)),]
+
+
+#ECM for pair with low ADF
+logprices=getPrices(log(mergedPrices),Pairs,1)
+lr=lm(logprices[,1]~logprices[,2])
+error=resid(lr)
+dpr1=diff(logprices[,1])
+dpr2=diff(logprices[,2])
+
+ecmdat=cbind(dpr1,dpr2,error)
+
+#call to error correction model
+ecm=dynlm(dpr1~L(error,1)+ L(dpr1,1) + L(dpr2,1), data=ecmdat)
+
+#add Johannssen test and its VECM
+y.data=data.frame(prices[,1],prices[,2])
+vecm1=ca.jo(y.data,type="eigen",spec="transitory")
+vecm2=ca.jo(y.data, type = "trace", spec = "transitory")
+vecm.reg <- cajorls(vecm1, r = 1)
+
+
