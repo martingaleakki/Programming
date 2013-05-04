@@ -48,9 +48,9 @@ vector<string> animate(int speed, const string& init)
 return animation;
 }
 
-int main()
-{
-    //cout<<getMissingLetters("A slow yellow fox crawls under the proactive dog")<<endl;
-    vector<string> steps= animate(1,"LRRL.LR.LRR.R.LRRL.");
-    for(int i =0;i<steps.size();i++) cout<<steps[i]<<endl;
-}
+//int main()
+//{
+//    //cout<<getMissingLetters("A slow yellow fox crawls under the proactive dog")<<endl;
+//    vector<string> steps= animate(1,"LRRL.LR.LRR.R.LRRL.");
+//    for(int i =0;i<steps.size();i++) cout<<steps[i]<<endl;
+//}

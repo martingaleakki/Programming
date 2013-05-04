@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/GetMissingLetters.o
+	${OBJECTDIR}/GetMissingLetters.o \
+	${OBJECTDIR}/JumbleSort.o
 
 
 # C Compiler Flags
@@ -66,6 +67,11 @@ ${OBJECTDIR}/GetMissingLetters.o: GetMissingLetters.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/GetMissingLetters.o GetMissingLetters.cpp
+
+${OBJECTDIR}/JumbleSort.o: JumbleSort.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/JumbleSort.o JumbleSort.cpp
 
 # Subprojects
 .build-subprojects:
