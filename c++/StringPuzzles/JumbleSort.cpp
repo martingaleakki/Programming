@@ -68,13 +68,13 @@ void JumpleSort(vector<string> input)
 }
 
 
-
-int main()
-{    
-    string input;
-    cout<<"Enter a line"<<endl;
-    getline (cin,input);
-    //printVector(split(input,' '));
-    JumpleSort(split(input,' '));
-    return 0;
-}
+//
+//int main()
+//{    
+//    string input;
+//    cout<<"Enter a line"<<endl;
+//    getline (cin,input);
+//    //printVector(split(input,' '));
+//    JumpleSort(split(input,' '));
+//    return 0;
+//}
