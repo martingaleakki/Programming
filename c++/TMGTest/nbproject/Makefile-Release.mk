@@ -35,10 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Kalah.o \
 	${OBJECTDIR}/LuckyTix.o \
+	${OBJECTDIR}/PisaTowerBalcony.o \
+	${OBJECTDIR}/PrinceOfPersia.o \
 	${OBJECTDIR}/PrintNumber.o \
 	${OBJECTDIR}/RateOfReturn.o \
-	${OBJECTDIR}/SoldierSpy.o
+	${OBJECTDIR}/SoldierSpy.o \
+	${OBJECTDIR}/TimeSeriesDiff.o
 
 
 # C Compiler Flags
@@ -65,10 +69,25 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tmgtest.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tmgtest ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Kalah.o: Kalah.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Kalah.o Kalah.cpp
+
 ${OBJECTDIR}/LuckyTix.o: LuckyTix.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/LuckyTix.o LuckyTix.cpp
+
+${OBJECTDIR}/PisaTowerBalcony.o: PisaTowerBalcony.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/PisaTowerBalcony.o PisaTowerBalcony.cpp
+
+${OBJECTDIR}/PrinceOfPersia.o: PrinceOfPersia.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/PrinceOfPersia.o PrinceOfPersia.cpp
 
 ${OBJECTDIR}/PrintNumber.o: PrintNumber.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -84,6 +103,11 @@ ${OBJECTDIR}/SoldierSpy.o: SoldierSpy.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/SoldierSpy.o SoldierSpy.cpp
+
+${OBJECTDIR}/TimeSeriesDiff.o: TimeSeriesDiff.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/TimeSeriesDiff.o TimeSeriesDiff.cpp
 
 # Subprojects
 .build-subprojects:

@@ -89,11 +89,11 @@ void PrintNumber(int num)
 
 
 
-int main()
-{
-    int n;
-    cin>>n;
-    
-    PrintNumber(n);
-    return 0;
-}
+//int main()
+//{
+//    int n;
+//    cin>>n;
+//    
+//    PrintNumber(n);
+//    return 0;
+//}

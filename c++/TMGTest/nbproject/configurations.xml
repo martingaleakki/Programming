@@ -12,10 +12,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Kalah.cpp</itemPath>
       <itemPath>LuckyTix.cpp</itemPath>
+      <itemPath>PisaTowerBalcony.cpp</itemPath>
+      <itemPath>PrinceOfPersia.cpp</itemPath>
       <itemPath>PrintNumber.cpp</itemPath>
       <itemPath>RateOfReturn.cpp</itemPath>
       <itemPath>SoldierSpy.cpp</itemPath>
+      <itemPath>TimeSeriesDiff.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,13 +44,21 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Kalah.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="LuckyTix.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PisaTowerBalcony.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrinceOfPersia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PrintNumber.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RateOfReturn.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SoldierSpy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TimeSeriesDiff.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -70,13 +82,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Kalah.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="LuckyTix.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PisaTowerBalcony.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrinceOfPersia.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PrintNumber.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RateOfReturn.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SoldierSpy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TimeSeriesDiff.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
