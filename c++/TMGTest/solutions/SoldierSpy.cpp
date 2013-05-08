@@ -16,12 +16,12 @@ void SoldierSpyN(int N)
     cout<<"Spy: "<<sum - runningSum<<endl;
 }
 
-//int main()
-//{
-//    //This program illustrates for size 10. Size 100 would be similar.
-//    //TestSoldierSpy10();
-//    int N=0;
-//    cout<<"Enter Total Number of Soldiers"<<endl;
-//    cin>>N;
-//    SoldierSpyN(N);
-//}
+int main()
+{
+    //This program illustrates for size 10. Size 100 would be similar.
+    //TestSoldierSpy10();
+    int N=0;
+    cout<<"Enter Total Number of Soldiers"<<endl;
+    cin>>N;
+    SoldierSpyN(N);
+}

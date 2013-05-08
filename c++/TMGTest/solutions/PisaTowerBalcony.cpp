@@ -124,9 +124,9 @@ void TestNormalVector()
     VectorV n = NormalVector(WAB,WAC);
     n.Print();
 }
-//int main()
-//{
-//    //TestNormalVector();
-//    TestPisaTowerBalcony();
-//    return 0;
-//}
+int main()
+{
+    //TestNormalVector();
+    TestPisaTowerBalcony();
+    return 0;
+}

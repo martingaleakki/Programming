@@ -89,12 +89,12 @@ void PrintNumber(int num)
 
 
 
-//int main()
-//{
-//    int n;
-//    cout<<"Enter Number To Print"<<endl;
-//    cin>>n;
-//    
-//    PrintNumber(n);
-//    return 0;
-//}
+int main()
+{
+    int n;
+    cout<<"Enter Number To Print"<<endl;
+    cin>>n;
+    
+    PrintNumber(n);
+    return 0;
+}

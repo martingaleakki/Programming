@@ -178,10 +178,10 @@ void TestPrinceOfPersia()
    
 }
 
-//int main()
-//{
-//    TestPrinceOfPersia();
-//}
+int main()
+{
+    TestPrinceOfPersia();
+}
 
 /*
 3
